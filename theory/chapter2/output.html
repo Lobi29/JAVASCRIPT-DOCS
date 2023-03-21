@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+
+    <style>
+        body {
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <!-- Using innerHTML -->
+    <p class="demo"></p>
+
+    <!-- Using document.write() -->
+    <p>Using document.write() after an HTML document is loaded, will delete all existing HTML:</p>
+
+    <button type="button" onclick="document.write(19+19)">Try it</button>
+
+    <!-- Using window.alert() -->
+    <button type="button" onclick="window.alert('hellow world!')">alert</button>
+
+
+    <!-- Using console.log() -->
+    <button type="button" onclick="console.log('hellow World!')">clg</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = 19 + 19;
+
+
+
+
+    </script>
+</body>
+</html>

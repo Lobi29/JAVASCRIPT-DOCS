@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+
+    <style>
+        body {
+            font-family: cursive;
+        }
+
+        #block {
+            width: 20vw;
+            height: 20vw;
+            background-color: aquamarine;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- JS can change the HTML content -->
+    <h1 id="intro">hello</h1>
+    <button onclick='document.getElementById("intro").innerHTML = "Bye!"'>click me</button>
+
+    <!-- JS can change the HTML attribute values -->
+    <a id="anchor" href="www.google.com">click</a>
+    <button onclick="document.getElementById('anchor').href = 'www.yahoo.com'">search</button>
+
+
+    <!-- JS can change the HTML styles (CSS) -->
+    <div id="block"></div>
+    <button onclick="document.getElementById('block').style.backgroundColor = 'yellow'">change the color</button>
+
+    <!-- JS can hide and show HTML elements -->
+    <div id="block"></div>
+    <button onclick="document.getElementById('block').style.display = 'none'">hide</button>
+    <button onclick="document.getElementById('block').style.display = 'show'">show</button>
+</body>
+</html>
